@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.form {
+    margin: 20px;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+.recipe {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
