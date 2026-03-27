@@ -11,7 +11,7 @@ async function loadRecipes() {
                 <p><b>Ingredients:</b> ${r.ingredients}</p>
                 <p><b>Steps:</b> ${r.steps}</p>
             </div>
-        `;
+    `;
     });
 }
 async function addRecipe() {
