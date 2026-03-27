@@ -7,13 +7,11 @@ app.use(express.static('public'));
 
 const FILE = 'recipes.json';
 
-// Get all recipes
 app.get('/recipes', (req, res) => {
     const data = fs.readFileSync(FILE);
     res.json(JSON.parse(data));
 });
 
-// Add recipe
 app.post('/recipes', (req, res) => {
     const recipes = JSON.parse(fs.readFileSync(FILE));
     recipes.push(req.body);
