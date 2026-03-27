@@ -1,7 +1,6 @@
 async function loadRecipes() {
     const res = await fetch('/recipes');
     const data = await res.json();
-
     const container = document.getElementById('recipes');
     container.innerHTML = '';
 
@@ -15,7 +14,6 @@ async function loadRecipes() {
         `;
     });
 }
-
 async function addRecipe() {
     const title = document.getElementById('title').value;
     const ingredients = document.getElementById('ingredients').value;
@@ -29,5 +27,4 @@ async function addRecipe() {
 
     loadRecipes();
 }
-
 loadRecipes();
