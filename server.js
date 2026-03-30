@@ -18,5 +18,4 @@ app.post('/recipes', (req, res) => {
     fs.writeFileSync(FILE, JSON.stringify(recipes, null, 2));
     res.json({ message: "Recipe added!" });
 });
-
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
