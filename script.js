@@ -3,7 +3,7 @@ async function loadRecipes() {
     const data = await res.json();
     const container = document.getElementById('recipes');
     container.innerHTML = '';
-
+    
     data.forEach(r => {
         container.innerHTML += `
             <div class="recipe">
